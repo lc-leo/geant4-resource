@@ -43,6 +43,7 @@ https://geant4.kek.jp/Reference/10.05.p01/
 有些资料是从一些博客中摘出来的
 * [Linux下安装Geant4.10](https://blog.whatsroot.xyz/2014/10/07/geant4-install/)
 当初在Linux下安装ROOT、G4都参照这位作者在豆瓣上的文章
+* [心蛛的 GEANT4 笔记](https://exaos.github.io/topics/physics-simulation/cern-geant4.html)
 * [cnscott的博客](http://cnscott.blog.163.com/blog/#m=0&t=3&c=geant4)
 * http://www.lofter.com/tag/Geant4
 * [小帕](http://littlepascal.lofter.com/?page=1&t=-1457572101347)
