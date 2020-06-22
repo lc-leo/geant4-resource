@@ -1,0 +1,8 @@
+# Macro file for example ED
+# 
+# Can be run in batch, without graphic
+# or interactively: Idle> /control/execute run1.mac
+#
+/run/initialize
+#
+/run/beamOn 1

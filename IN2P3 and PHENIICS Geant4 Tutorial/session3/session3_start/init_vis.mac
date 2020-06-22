@@ -1,0 +1,14 @@
+# Macro file for the initialization phase of example ED
+# when running in interactive mode with visualization
+#
+# Set some default verbose
+#
+/control/verbose 2
+/control/saveHistory
+/run/verbose 2
+#
+# Initialize kernel
+/run/initialize
+#
+# Visualization setting
+/control/execute vis.mac

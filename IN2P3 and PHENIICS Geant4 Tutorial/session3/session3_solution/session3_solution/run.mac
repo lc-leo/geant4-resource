@@ -1,0 +1,18 @@
+# Macro file for example ED
+# 
+# Can be run in batch, without graphic
+# or interactively: Idle> /control/execute run1.mac
+#
+/run/initialize
+#
+/gun/particle proton
+/run/beamOn 3
+#
+/gun/particle e+
+/run/beamOn 3
+#
+/gun/particle pi-
+/run/beamOn 3
+#
+/gun/particle mu+
+/run/beamOn 3
