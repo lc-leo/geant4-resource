@@ -1,0 +1,45 @@
+# Macro file for example ED
+# 
+# Can be run in batch, without graphic
+# or interactively: Idle> /control/execute run1.mac
+#
+/run/initialize
+#
+# Dump particle processes
+#
+/particle/select proton
+/particle/process/dump
+#
+/particle/select e+
+/particle/process/dump
+#
+/particle/select e-
+/particle/process/dump
+#
+/particle/select gamma
+/particle/process/dump
+#
+# Set particle production thresholds (cuts)
+#
+/run/setCut 1 mm
+/run/setCutForAGivenParticle e- 0.1 mm
+/run/setCutForAGivenParticle e+ 0.2 mm
+/run/setCutForAGivenParticle gamma 0.3 mm
+#
+# Run processing
+#
+/gun/particle proton
+/run/beamOn 3
+#
+/gun/particle e+
+/run/beamOn 3
+#
+/gun/particle pi-
+/run/beamOn 3
+#
+# Activate histograms plotting
+#
+/analysis/h1/setPlottingToAll true  
+#
+/gun/particle mu+
+/run/beamOn 1000
