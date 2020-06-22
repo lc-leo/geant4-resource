@@ -57,8 +57,8 @@ https://geant4.kek.jp/Reference/10.05.p01/
 * G4 Japanese Tutorial for Detector Simulation 2017
 * 清华大学杨振伟等老师的课件，包含Linux、ROOT、Geant4的内容[~/G4_Lectures_THU]
 * Geant4系列讲座（出处未知，缺少第一讲）[~/G4_Lectures]
-* 猪头Geant4讲座
-* 其他来自博客或百度文库的文章
+* IN2P3 geant4 course 2011，IN2P3出品必属精品，geant4.9.6版本教程     
+* IN2P3 and PHENIICS Geant4 Tutorial，教程加实例                                                       
 * ...
 ## G4 Tutorial
 欢迎大神分享自己的Geant4项目实例，G4小白们当不胜感激！
