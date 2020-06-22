@@ -1,0 +1,18 @@
+# Macro file for example ED
+# 
+# Can be run in batch, without graphic
+# or interactively: Idle> /control/execute run1.mac
+#
+
+# Set particle production thresholds (cuts)
+#
+
+/run/setCut 1 mm
+/run/setCutForRegion EmCalorimeterRegion 1 mm
+
+
+# Run processing
+#
+
+/gun/particle proton
+/run/beamOn 1000
