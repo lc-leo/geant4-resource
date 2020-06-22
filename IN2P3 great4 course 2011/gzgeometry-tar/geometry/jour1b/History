@@ -1,0 +1,36 @@
+$Id: History 178 2008-09-30 10:43:36Z maire $
+
+
+			jour1b
+			------
+     
+30-04-08 mma
+ - definition de la geometrie.
+ - ce qu'il faudrait faire :
+	- ameliorer l'interactivité (UIQt ?) et la visualisation.
+	- comment representer un cylindre en coupe ?
+	- introduire des macros de visualisation ?
+	
+05-05-08 mma (jour1b-00)
+ - geometry : jour1a + astronaute
+
+	
+23-05-08 mma
+ - PhysicsList : suppression du muon
+ 
+23-06-08 mma
+ - DetectorConstruction : modification des parametres de definition, en
+ particulier la position du plancher et de l'astronaute.
+ 
+24-06-08 mma
+ - PrimaryGenerator : geantino, 10 eV
+ 
+01-07-08 jja
+ - convention pour les donnees privees
+ - DetectorConstruction : astronaute volume : Trd
+ 
+17-08-08 mma
+ - DetectorConstruction : astronaute volume : change dimensions  
+ 
+30-02-08 mma
+ - DetectorConstruction.cc2 : place second spaceCraft  

@@ -1,0 +1,61 @@
+$Id: Readme-Questions 176 2008-09-30 10:39:01Z maire $
+
+
+                            jour1a
+                            ------
+	
+ 1 - GEOMETRY
+
+   A space shuttle is modeled by an all-made aluminum cylinder.
+   Inside the cabin is a floor, also made out of aluminum.
+   The shuttle is placed in space ('World'): the smallest possible box. 
+	 	
+ 2 – HOW TO START?
+ 
+  - read the code: jour1a.cc (main) and the 2 classes 
+    DetectorConstruction and PrimaryGeneratorAction
+ 
+  - compile and generate an executable: 
+  	% gmake
+ 		
+  - execute jour1a in interactive mode with visualization:
+	% $G4WORKDIR/bin/$G4SYSTEM/jour1a
+	....
+	Idle> type your commands. example:
+	
+	Idle> /run/beamOn 1
+	Idle> /gun/direction 1 1 0
+	Idle> /run/beamOn 1
+	Idle> /gun/position -2.4 0 0 m
+	Idle> /run/beamOn 1
+	....
+	Idle> exit
+
+	 	
+ 3 - PRACTICE
+ 	
+  - understand what is written on the screen and the drawing.
+  - by using the commands /gun/direction and gun/position, try to locate 
+    the coordinate system.
+  - read the macro vis.mac and try few visualization commands.
+  
+		
+ 4 – PROBLEM 1
+ 
+    Model a '(mini)astronaut' with a set of pyramids having a square base 
+    (height = 50 cm, base = 60 cm (bottom), 40 cm (top), material = 
+    water) and place it on the floor.
+    
+    - materials: see User's Guide for Application Developer (section 2.3)
+ 	 http://geant4.web.cern.ch/geant4/G4UsersDocuments/UsersGuides/ForApplicationDeveloper/html/GettingStarted/geometryDef.html
+	or $G4INSTALL/examples/novice/N03/src/ExN03DetectorConstruction.cc
+    - placement with rotation: see placement of the floor
+    
+    Answer: see day1b
+		
+ 5 - PROBLEM 2
+ 
+    Increase the space and place a second (with rotation ...)
+    	
+    Answer: see day1b: DetectorConstruction.cc2
+

@@ -1,0 +1,38 @@
+$Id: History 143 2008-08-17 14:06:12Z maire $
+
+
+			jour1c
+			------
+     
+30-04-08 mma
+ - definition de la geometrie.
+ - ce qu'il faudrait faire :
+	- ameliorer l'interactivité (UIQt ?) et la visualisation.
+	- comment representer un cylindre en coupe ?
+	- introduire des macros de visualisation ?
+	
+05-05-08 mma (jour1b-00)
+ - geometry : jour1a + astronaute
+ 
+14-05-08 mma
+ - geometry : jour1b + private data members + Set/Get functions
+              delete old geometry + UpdateGeometry() function
+	      complete PrintParameters()
+     
+	
+23-05-08 mma
+ - PhysicsList : suppression du muon
+ 
+23-06-08 mma
+ - DetectorConstruction : modification des parametres de definition, en
+ particulier la position du plancher et de l'astronaute.
+ 
+24-06-08 mma
+ - PrimaryGenerator : geantino, 10 eV
+ 
+01-07-08 jja
+ - convention pour les donnees privees
+ - DetectorConstruction : astronaute volume : Trd
+  
+17-08-08 mma
+ - DetectorConstruction : astronaute volume : change dimensions  

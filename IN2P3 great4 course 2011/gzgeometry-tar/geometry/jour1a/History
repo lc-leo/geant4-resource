@@ -1,0 +1,27 @@
+$Id: History 141 2008-08-17 13:56:34Z maire $
+
+			jour1a
+			------
+     
+30-04-08 mma
+ - definition de la geometrie.
+ - ce qu'il faudrait faire :
+	- ameliorer l'interactivité (UIQt ?) et la visualisation.
+	- comment representer un cylindre en coupe ?
+	- introduire des macros de visualisation ?
+	
+23-05-08 mma
+ - PhysicsList : suppression du muon
+ 
+23-06-08 mma
+ - DetectorConstruction : modification des parametres de definition, en
+ particultier la position du plancher.
+ 
+24-06-08 mma
+ - PrimaryGenerator : geantino, 10 eV
+ 
+01-07-08 jja
+ - convention pour les donnees privees
+ 
+17-08-08 mma
+ - Question : astronaute volume defini comme Trd  

@@ -1,0 +1,43 @@
+$Id: Readme-Questions 85 2008-05-30 14:03:00Z maire $
+
+
+                            jour1c
+                            ------
+	
+ 1 - GEOMETRY
+
+   A space shuttle is modeled by an all-made aluminum cylinder.
+   Inside the cabin is a floor, also made out of aluminum.
+   The shuttle is placed in space ('World'): the smallest possible box. 
+   
+   An astronaut is placed on the floor.
+    	
+	 	
+ 2 – HOW TO START?
+ 
+  - read the code: day1c.cc (main) and the 2 classes DetectorConstruction
+    and PrimaryGeneratorAction
+ 
+  - compile et generate an executable: 
+  	% gmake
+ 		
+  - execute day1c in interactive mode with visualization:
+	% $G4WORKDIR/bin/$G4SYSTEM/jour1c
+	....
+	Idle> type your commands
+	....
+	Idle> exit
+  
+		
+ 3 - PROBLEM: examination of the class DetectorConstruction
+
+    The parameters that determine the geometry (spaceCraftRadius, etc...)
+    Are private variables of the class.
+    
+    Examine the corresponding public accessible functions Get/Set:
+    ‘in line’ or separate implementation
+    
+    Function UpdateGeometry() to force the reconstruction of the geometry 
+    
+    Function PrintParameters(): print the units
+

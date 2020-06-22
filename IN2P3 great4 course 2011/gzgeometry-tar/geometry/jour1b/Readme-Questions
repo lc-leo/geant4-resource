@@ -1,0 +1,53 @@
+$Id: Readme-Questions 177 2008-09-30 10:41:10Z maire $
+
+
+                            jour1b
+                            ------
+	
+ 1 - GEOMETRY
+
+   A space shuttle is modeled by an all-made aluminum cylinder.
+   Inside the cabin is a floor, also made out of aluminum.
+   The shuttle is placed in space ('World'): the smallest possible box. 
+   
+   An astronaut is placed on the floor.
+
+   The reference frame is defined as:
+   - x -> red
+   - y -> green
+   - z -> blue
+    	
+	 	
+ 2 – HOW TO START?
+ 
+  - read the code: day1b.cc (main) and the 2 classes DetectorConstruction
+    and PrimaryGeneratorAction
+ 
+  - compile and generate an executable: 
+  	% gmake
+ 		
+  - execute day1b in interactive mode with visualization:
+	% $G4WORKDIR/bin/$G4SYSTEM/jour1b
+	....
+	Idle> type your commands
+	....
+	Idle> exit
+  
+		
+ 3 - PROBLEM 
+
+    The parameters that define the geometry
+    (cabinRadius, cabinLength, ...etc...)
+    Are local variables for the function ConstructVolumes().
+    
+    Define these variables as private for the DetectorConstruction class.
+    Initialize the independent variables in the constructor and leave the 
+    calculated variables in the function ConstructVolumes().
+    Write the corresponding functions Get/Set public accesible.
+    
+    Complete the function PrintParameters() to print the units for the
+    different geometrical components: World, Spacecraft, Floor, 
+    Astronaut.
+
+    Answer: see day1c
+
