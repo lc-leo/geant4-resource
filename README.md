@@ -1,4 +1,4 @@
-## Geant4-Resource
+# Geant4-Resource
 ---
 整理初学Geant4时搜集的一些资料，分享给需要的同学。
 有些资料可能没什么用处，但一并放过来了。
@@ -62,3 +62,7 @@ https://geant4.kek.jp/Reference/10.05.p01/
 * ...
 ## G4 Tutorial
 欢迎大神分享自己的Geant4项目实例，G4小白们当不胜感激！
+
+---
+# MCNP-resources
+MCNP的一些基础资料：中英文教程、源描述、材料库、实例等
