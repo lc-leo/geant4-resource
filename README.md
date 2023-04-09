@@ -33,10 +33,6 @@ https://geant4.kek.jp/Reference/10.05.p01/
 * [Geant4 User Forum](https://geant4-forum.web.cern.ch/)
 * [核技术论坛](http://www.hejishult.cn/forum.php)
 * [Geant4中国用户群](https://geant4cn.livejournal.com/)
-* [<<Geant4 从入门到放弃>>LaTeX项目](https://gitee.com/qiangge_666/G4_manual_trans)
-强哥编写的项目，有志者可以一起完善。
-* 微信公众号-Geant4模拟学习交流
-* 微信公众号-Geant4不完全学习指南(已注销)
 * QQ学习交流群
 ## Personal Blog
 ---
