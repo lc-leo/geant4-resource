@@ -43,9 +43,7 @@ https://geant4.kek.jp/Reference/10.05.p01/
 * QQ学习交流群
 ## Personal Blog
 ---
-
-* [Linux下安装Geant4.10](https://blog.whatsroot.xyz/2014/10/07/geant4-install/)
-当初在Linux下安装ROOT、G4都参照这位作者在豆瓣上的文章
+网上关于Geant4学习的个人总结和感想，仅供参考（上面部分文件来自网络博客）
 * [心蛛的 GEANT4 笔记](https://exaos.github.io/topics/physics-simulation/cern-geant4.html)
 * [cnscott的博客](http://cnscott.blog.163.com/blog/#m=0&t=3&c=geant4)
 * http://www.lofter.com/tag/Geant4
@@ -63,9 +61,44 @@ https://geant4.kek.jp/Reference/10.05.p01/
 * IN2P3 geant4 course 2011，IN2P3出品必属精品，geant4.9.6版本教程     
 * IN2P3 and PHENIICS Geant4 Tutorial，教程加实例                                                       
 * ...
-## G4 Tutorial
-欢迎大神分享自己的Geant4项目实例，G4小白们当不胜感激！
 
+## G4 Tutorial
+---
+欢迎大神分享自己的Geant4项目实例，G4小白们当不胜感激！
+### 1. 基于CADMesh的CAD模型导入方法
+* 基本方法：
+  * solidworks绘制模型，保存为STEP格式；
+  * 用FreeCAD进行格式转换：打开step格式文件 -- Mesh Design -- 从形体创建网格 -- 剖分网格（standard模式，表面切割最小值0.01 mm，角度分割最小值1度）-- 在工程项目下右键 -- 导出网格 -- 输出为ASCII stl格式 -- 打开stl文件，删除第一行的（Meshed）及前面的空格；
+  * 或者直接用FreeCAD绘图并剖分网格后存为stl格式。
+  * 通过CADMesh读取stl文件并接入Geant4。
+* 下载CADMesh
+https://github.com/christopherpoole/CADMesh
+将根目录下新版本的CADMesh.hh文件替换掉include目录下的文件
+* 安装FreeCAD
+``` bash
+sudo add-apt-repository ppa:freecad-maintainers/freecad-stable
+sudo apt-get update
+sudo apt install freecad
+sudo apt install gmsh      # 网格划分
+sudo apt install calculix-ccx     # 有限元求解
+```
+* 将CADMesh.hh文件复制到Geant4项目的include目录下
+* 将模型的stl文件放到Geant4项目的根目录下，并修改CMakeList.txt文件，添加stl文件到脚本列表中
+* 编写DetectorConstruction.cc文件，引入头文件CADMesh.hh，并添加构造实体：
+```cpp
+// CADMesh :: STL
+  auto test = CADMesh::TessellatedMesh::FromSTL("./test.stl");
+  test -> SetScale(1);  // 模型比例
+  test -> SetOffset(G4ThreeVector(-25,25,-10)); // 模型相对坐标原点的偏置，单位：mm
+  auto test_solid = test->GetSolid();
+  auto logictest = new G4LogicalVolume(test_solid,kapton,"logictest",0,0,0);
+  new G4PVPlacement(0,G4ThreeVector(),logictest,"test",fLWorld,false,0);
+```
+* 注意事项：
+  * solidworks剖分网格需要建立算例，simulation工具需要solidworks的产品序列号。且solidworks只能保存二进制格式的stl文件，无法用CADMesh直接读取。
+  * solidworks模型（零件或装配体）一定要将坐标原点放到感兴趣的坐标轴上，并且知道原点的空间坐标（x，y，z），模型导入到FreeCAD后坐标信息不变。
+  * FreeCAD保存为ASCII格式的stl文件后要更改solid的名称（第一行：solid name），且name不能包含除字母外的字符（如数字、下划线、空格等），否则会报错。
+  * 需要设置模型相对坐标原点的偏置，若原点坐标为（x，y，z），则偏置坐标为（-x，-y，-z）
 ---
 # MCNP-resources
 MCNP的一些基础资料：中英文教程、源描述、材料库、实例等
