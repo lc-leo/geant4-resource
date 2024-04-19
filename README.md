@@ -7,13 +7,18 @@
 ## G4 Virtual Machine
 ---
 我想很多人像我一样，初学G4时从没用过Linxu系统，写程序停留在边写边百度的水平，那么建议先不要自己去安装配置Gean4，可以下载一个已经配置好的虚拟机。
+* [Geant4 @ IN2P3 - Geant4 Virtual Machine](https://geant4.lp2ib.in2p3.fr/)【首推！】
+  * 法国国家核与粒子物理研究所（IN2P3）针对Geant4发布的虚拟机，基于RockyLinux 9系统和VMware虚拟机软件；
+  * 持续更新，包含最新版本的Geant4程序（with all sets of data files），同时Linux系统也会更新；
+  * 同时包含了ROOT、QT6、Python(with Jupyter, Matplotlib, NumPy, SciPy and Sphinx)、CLHEP、Jupyter、gnuplot、Tex Live等实用工具。
+* [vGATE](http://www.opengatecollaboration.org/)
+  * 针对GATE发布的虚拟机，基于Ubuntu系统和Virtual Box虚拟机软件；
+  * 依GATE版本持续更新
+  * 包含新版本的Geant4和ROOT等程序
 * [Geant4CernVM](https://twiki.cern.ch/twiki/bin/view/Geant4/Geant4CernVM)
 CERNVM is a CERN project to build appliances for HEP applications. A customised appliance has been prepared with the latest version of Geant4 and chosen additional software. The virtual machine contains: A Linux operating system A (minimal) GNOME desktop environment A pre-installed release of Geant4 9.3 A pre-installed release of ROOT 5.26
 没用过，感觉版本比较老了。
-* [Geant4 @ IN2P3 - Geant4 Virtual Machine](http://geant4.in2p3.fr/spip.php?rubrique8&lang=en)【推荐！】
-非常好的一个虚拟机，在CentOS7.6系统中安装了geant4.10.05.p01、ROOT、QT、Python 3.7.2 (with Matplotlib,NumPy,SciPy)、gnuplot、Tex Live等实用工具。
-* [vGATE 7.2](http://www.opengatecollaboration.org/vGATE72)
-Ubuntu 64位系统，集成了Geant4 10.02，Root 5.34，Gate 7.2等工具
+
 ## G4 Official Website
 ---
 * G4主页：[http://geant4.web.cern.ch/](http://geant4.web.cern.ch/)
@@ -23,6 +28,8 @@ https://geant4.kek.jp/Reference/10.05.p01/
 ## G4 Official Documents
 ---
 官网Geant4手册（可在上面文件夹中直接下载）
+
+查看官方手册和示例是最全面、最高效的Geant4学习途径
 * Geant4 user guide for application developer
 * Geant4中文手册
 * Geant4 User's Guide for Toolkit Developers
@@ -30,13 +37,13 @@ https://geant4.kek.jp/Reference/10.05.p01/
 * Physics Reference Manual
 ## Forums、WeChat_Subscriptions
 ---
-* [Geant4 User Forum](https://geant4-forum.web.cern.ch/)
+* [Geant4 User Forum](https://geant4-forum.web.cern.ch/)，官方论坛，有问题可以去搜索或提问，对Geant4学习非常有帮助！
 * [核技术论坛](http://www.hejishult.cn/forum.php)
 * [Geant4中国用户群](https://geant4cn.livejournal.com/)
 * QQ学习交流群
 ## Personal Blog
 ---
-有些资料是从一些博客中摘出来的
+
 * [Linux下安装Geant4.10](https://blog.whatsroot.xyz/2014/10/07/geant4-install/)
 当初在Linux下安装ROOT、G4都参照这位作者在豆瓣上的文章
 * [心蛛的 GEANT4 笔记](https://exaos.github.io/topics/physics-simulation/cern-geant4.html)
