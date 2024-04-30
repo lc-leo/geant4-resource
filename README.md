@@ -38,9 +38,8 @@ https://geant4.kek.jp/Reference/10.05.p01/
 ## Forums、WeChat_Subscriptions
 ---
 * [Geant4 User Forum](https://geant4-forum.web.cern.ch/)，官方论坛，有问题可以去搜索或提问，对Geant4学习非常有帮助！
-* [核技术论坛](http://www.hejishult.cn/forum.php)
-* [Geant4中国用户群](https://geant4cn.livejournal.com/)
-* QQ学习交流群
+* 微信公众号：
+* QQ学习交流群：
 ## Personal Blog
 ---
 网上关于Geant4学习的个人总结和感想，仅供参考（上面部分文件来自网络博客）
