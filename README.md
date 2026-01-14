@@ -54,7 +54,7 @@ https://geant4.kek.jp/Reference/10.05.p01/
 欢迎大神分享自己的Geant4项目实例，G4小白们当不胜感激！
 ### 一. 基于CADMesh的CAD模型导入方法
 ##### 1. 模型绘制与网格剖分：
-~方法1：solidworks绘制模型+freecad剖分网格（此方法已过失，仅针对老版本solidworks)~
+~方法1：solidworks绘制模型+freecad剖分网格（此方法已过时，仅针对老版本solidworks)~
   * solidworks绘制模型，保存为STEP格式；
   * solidworks剖分网格需要建立算例，simulation工具需要solidworks的产品序列号。且solidworks只能保存二进制格式的stl文件，无法用CADMesh直接读取。（仅针对老版本solidworks）
   * 用FreeCAD进行格式转换：打开step格式文件 -- Mesh Design -- 从形体创建网格 -- 剖分网格（standard模式，表面切割最小值0.01 mm，角度分割最小值1度）-- 在工程项目下右键 -- 导出网格 -- 输出为ASCII stl格式 -- 打开stl文件，删除第一行的（Meshed）及前面的空格；
